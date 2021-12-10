@@ -1,6 +1,6 @@
 nextflow.enable.dsl=2
 
-params.index = "index-full.txt"
+params.index = "$baseDir/index-full.txt"
 
 channel
   .fromPath(params.index)
