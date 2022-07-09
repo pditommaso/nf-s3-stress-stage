@@ -6,6 +6,6 @@ of sample files from S3 to the local storage.
 ### Usage 
 
 ```
-nextflow run pditommaso/nf-stress-stage [--index <FILE NAME>]
+nextflow run pditommaso/nf-s3-stress-stage [--index <FILE NAME>]
 ```
 
