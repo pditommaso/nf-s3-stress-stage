@@ -1,7 +1,7 @@
 nextflow.enable.dsl=2
 
 params.index = "$baseDir/index-full.txt"
-params.upload_count = 4
+params.upload_count = 0
 params.upload_size = '10G'
 
 channel
