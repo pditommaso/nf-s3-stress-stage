@@ -13,6 +13,7 @@ channel
 
 workflow {
   download()
+  upload()
 }
 
 workflow download {
@@ -21,7 +22,9 @@ workflow download {
 }
 
 workflow upload {
-  channel.of(1..params.upload_count) | uploadRandomFile
+  if( params.upload_count ) {
+      uploadRandomFile( channel.of(1..params.upload_count) )
+  }
 }
 
 process foo {
