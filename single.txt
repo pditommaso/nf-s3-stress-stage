@@ -1,1 +1,1 @@
-s3://nextflow-ci/petagene/example_data/real.fastq.gz
+s3://sra-pub-src-2/ERR1305737/m151221_184918_00127_c100958412550000001823217206251660_s1_p0.bas.h5.1
