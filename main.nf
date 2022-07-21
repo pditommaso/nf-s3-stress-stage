@@ -3,6 +3,7 @@ nextflow.enable.dsl=2
 params.index = "$baseDir/index-full.txt"
 params.upload_count = 0
 params.upload_size = '10G'
+params.upload_dir = "s3://nextflow-ci/data/"
 
 channel
   .fromPath(params.index)
@@ -44,7 +45,7 @@ process bar {
 }
 
 process uploadRandomFile {
-  publishDir "s3://nextflow-ci/data/"
+  publishDir params.upload_dir
   input:
   val index
   output:
